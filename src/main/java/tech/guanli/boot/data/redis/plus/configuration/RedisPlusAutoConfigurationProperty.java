@@ -8,6 +8,6 @@ import lombok.Data;
 @Data
 public class RedisPlusAutoConfigurationProperty {
 
-	private String keyPrefix;
+	private String keyPrefix = "";
 
 }
