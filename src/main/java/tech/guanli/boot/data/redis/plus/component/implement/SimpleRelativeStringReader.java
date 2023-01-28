@@ -13,12 +13,12 @@ public class SimpleRelativeStringReader extends StringReader<Void> {
 	}
 
 	@Override
-	protected String getAndSetIfAbsent(String key, Void parameter) {
+	public String getAndSetIfAbsent(String key, Void parameter) {
 		return super.get(key);
 	}
 
 	@Override
-	protected String getAndSetIfAbsent(String key, Void parameter, Long expiresSeconds) {
+	public String getAndSetIfAbsent(String key, Void parameter, Long expiresSeconds) {
 		return super.get(key);
 	}
 

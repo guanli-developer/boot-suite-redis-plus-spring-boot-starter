@@ -7,7 +7,7 @@ import tech.guanli.boot.data.redis.plus.component.core.RelativeReader;
 
 public abstract class StringReader<Parameter> extends RelativeReader<String, Parameter> {
 	@Override
-	protected String getAndSetIfAbsent(String key, Parameter parameter) {
+	public String getAndSetIfAbsent(String key, Parameter parameter) {
 		String value = get(key);
 		if (Objects.isNull(value)) {
 			value = readCodeData(parameter);
@@ -19,7 +19,7 @@ public abstract class StringReader<Parameter> extends RelativeReader<String, Par
 	}
 
 	@Override
-	protected String getAndSetIfAbsent(String key, Parameter parameter, Long expiresSeconds) {
+	public String getAndSetIfAbsent(String key, Parameter parameter, Long expiresSeconds) {
 		String value = get(key);
 		if (Objects.isNull(value)) {
 			value = readCodeData(parameter);
