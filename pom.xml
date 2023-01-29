@@ -25,9 +25,9 @@
 		</license>
 	</licenses>
 	<scm>
-		<url>https://github.com/guanli-developer/boot-suite-validate-spring-boot-starter</url>
-		<connection>https://github.com/guanli-developer/boot-suite-validate-spring-boot-starter.git</connection>
-		<developerConnection>https://github.com/guanli-developer/boot-suite-validate-spring-boot-starter</developerConnection>
+		<url>https://github.com/guanli-developer/boot-suite-redis-plus-spring-boot-starter</url>
+		<connection>https://github.com/guanli-developer/boot-suite-redis-plus-spring-boot-starter.git</connection>
+		<developerConnection>https://github.com/guanli-developer/boot-suite-redis-plus-spring-boot-starter</developerConnection>
 	</scm>
 	<developers>
 		<developer>
