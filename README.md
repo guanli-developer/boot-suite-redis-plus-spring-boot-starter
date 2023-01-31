@@ -14,3 +14,4 @@ If your value is string, and you don't need to read cold data, you can use `Simp
 2. In your implemention, you just need to implement `readColdData` method, the generic `ColdData` is type of the cold data to read, and `Parameter` is a object to query cold data. When you use `getAndSetIfAbsent`, if your key is mismatch in redis, readColdData will be call automaticly.
 3. Register your implemention to spring
 4. Inject your bean and use it.
+5. It comes something new, since version `1.1.0-RELEASE`, we supplied a new `SerializableObjectReader` class in both `tech.guanli.boot.data.redis.plus.component.absolute` and `tech.guanli.boot.data.redis.plus.component.relative` package, that contains two function to read cache and converte it to your type automaticly.

@@ -21,7 +21,7 @@ public abstract class ObjectReader<ColdData, Parameter> extends AbsoluteReader<C
 					value = objectMapper.writeValueAsString(coldData);
 					redisTemplate.opsForValue().set(key, value);
 				} catch (JsonProcessingException e) {
-					log.error("code data can not be serialized to a json string:", e);
+					log.error("cold data can not be serialized to a json string:", e);
 				}
 			}
 		}
@@ -38,7 +38,7 @@ public abstract class ObjectReader<ColdData, Parameter> extends AbsoluteReader<C
 					value = objectMapper.writeValueAsString(coldData);
 					redisTemplate.opsForValue().set(key, value, expiresSeconds, TimeUnit.SECONDS);
 				} catch (JsonProcessingException e) {
-					log.error("code data can not be serialized to a json string:", e);
+					log.error("cold data can not be serialized to a json string:", e);
 				}
 			}
 		}
